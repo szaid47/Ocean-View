@@ -1,0 +1,21 @@
+
+[
+    {
+        "latitude": 15.97530,
+        "longitude": -87.62100,
+        "intensity": 5,
+        "type": "plastic_waste"
+    },
+    {
+        "latitude": 15.97490,
+        "longitude": -87.62280,
+        "intensity": 4,
+        "type": "ocean_waste"
+    },
+    {
+        "latitude": 15.97510,
+        "longitude": -87.62310,
+        "intensity": 3,
+        "type": "fishing_gear"
+    }
+]

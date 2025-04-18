@@ -1,0 +1,14 @@
+[
+    {
+        "latitude": 16.008856,
+        "longitude": -86.966447,
+        "intensity": 1,
+        "type": "plastic_waste"
+    },
+    {
+        "latitude": 16.007941,
+        "longitude": -86.966668,
+        "intensity": 1,
+        "type": "plastic_waste"
+    }
+]

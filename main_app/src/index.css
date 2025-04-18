@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 213 31% 91%;
+
+    --card: 222 47% 13%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 196 100% 53%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 47% 16%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 223 47% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 196 100% 53%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 223 47% 18%;
+    --input: 223 47% 18%;
+    --ring: 196 100% 53%;
+
+    --radius: 0.75rem;
+
+    --ocean: 196 100% 53%;
+    --ocean-foreground: 222 47% 11%;
+    --ocean-50: 192 98% 96%;
+    --ocean-100: 190 95% 89%;
+    --ocean-200: 190 90% 80%;
+    --ocean-300: 190 95% 68%;
+    --ocean-400: 192 92% 58%;
+    --ocean-500: 196 100% 53%;
+    --ocean-600: 197 100% 45%;
+    --ocean-700: 197 100% 37%;
+    --ocean-800: 196 98% 30%;
+    --ocean-900: 196 98% 26%;
+    --ocean-950: 196 98% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-ocean/30 selection:text-ocean-50;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground;
+  }
+}
+
+@layer components {
+  /* Glass container */
+  .glass-container {
+    @apply bg-card/40 backdrop-blur-md border border-white/5 shadow-lg;
+  }
+
+  /* Glass button */
+  .glass-button {
+    @apply px-4 py-2 rounded-lg bg-primary/10 backdrop-blur-md border border-primary/20 text-primary 
+           shadow-md transition-all duration-300 hover:bg-primary/20 hover:border-primary/30 
+           active:scale-95;
+  }
+
+  /* Ocean text gradient */
+  .ocean-text {
+    @apply bg-gradient-to-r from-ocean-300 via-ocean to-ocean-300 text-transparent bg-clip-text;
+  }
+
+  /* Card hover effect */
+  .hover-card {
+    @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-ocean/10;
+  }
+
+  /* Nav link effect */
+  .nav-link {
+    @apply relative px-3 py-2 text-foreground/70 transition-colors duration-300 
+           hover:text-foreground after:absolute after:bottom-0 after:left-0 after:h-[2px] 
+           after:w-0 after:bg-ocean after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .nav-link.active {
+    @apply text-foreground after:w-full;
+  }
+
+  /* Ocean wave animation background */
+  .wave-bg {
+    @apply relative overflow-hidden;
+  }
+  
+  .wave-bg::before {
+    content: "";
+    @apply absolute inset-0 bg-ocean-waves opacity-[0.03] animate-wave;
+  }
+
+  /* Shimmer effect */
+  .shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full 
+           before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r 
+           before:from-transparent before:via-white/10 before:to-transparent;
+  }
+
+  /* Animated border */
+  .animated-border {
+    @apply relative before:absolute before:inset-0 before:rounded-lg before:p-[1px]
+           before:bg-gradient-to-r before:from-ocean-400/40 before:via-ocean/40 before:to-ocean-400/40
+           before:animate-pulse-subtle overflow-hidden;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center rounded-full bg-ocean/10 px-2 py-1 text-xs font-medium text-ocean-300 ring-1 ring-inset ring-ocean/20;
+  }
+}
+
+@layer utilities {
+  /* Blur backdrop */
+  .backdrop-blur {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Button ripple effect */
+  .ripple {
+    @apply relative overflow-hidden;
+  }
+
+  .ripple::after {
+    content: "";
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 rounded-full 
+           bg-white opacity-30 transition-all duration-500 ease-out;
+    padding: 0;
+  }
+
+  .ripple:active::after {
+    @apply w-[500%] h-[500%] opacity-0 transition-none;
+  }
+}
+
+/* Mapbox Custom Styles */
+.waste-marker {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  @apply bg-card border border-border text-foreground rounded-lg shadow-lg;
+}

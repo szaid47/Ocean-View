@@ -1,0 +1,32 @@
+[
+    {
+        "latitude": 16.525632,
+        "longitude": -86.098577,
+        "intensity": 1,
+        "type": "plastic_waste"
+    },
+    {
+        "latitude": 16.524789,
+        "longitude": -86.095128,
+        "intensity": 1,
+        "type": "plastic_waste"
+    },
+    {
+        "latitude": 16.524792,
+        "longitude": -86.094472,
+        "intensity": 1,
+        "type": "plastic_waste"
+    },
+    {
+        "latitude": 16.525632,
+        "longitude": -86.097399,
+        "intensity": 1,
+        "type": "plastic_waste"
+    },
+    {
+        "latitude": 16.525632,
+        "longitude": -86.097373,
+        "intensity": 1,
+        "type": "plastic_waste"
+    }
+]
