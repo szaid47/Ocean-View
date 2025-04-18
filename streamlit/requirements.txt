@@ -1,0 +1,10 @@
+streamlit
+opencv-python-headless
+numpy
+imageio
+pygame
+gtts
+ultralytics
+pillow
+imageio[ffmpeg]
+
