@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000'; // Change this to your FastAPI server URL when deployed
+const API_BASE_URL = 'http://localhost:8000'; 
 
 export interface Detection {
   class_name: string;
