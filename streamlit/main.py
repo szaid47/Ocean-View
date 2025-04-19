@@ -259,7 +259,7 @@ with st.sidebar:
 
     
     # FPS Control
-    fps = st.slider("Frames per Second", min_value=1, max_value=30, value=5)
+    fps = st.slider("Frames per Second", min_value=1, max_value=30, value=10) #fps changed to 10 for better performance
     confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.1, 1.0, 0.5)
 
 def update_elapsed_time():
