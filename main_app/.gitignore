@@ -46,3 +46,8 @@ dist-ssr
 *.code-workspace.code-snippets.code-search.code-workspace.code-search
 *.code-workspace.code-snippets.code-search.code-workspace.code-search.code-snippets
 
+#some extra
+__pycache__/
+*.py[cod]
+videos/
+*.pt

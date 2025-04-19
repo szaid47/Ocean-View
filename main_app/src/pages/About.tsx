@@ -11,22 +11,22 @@ const About = () => {
     {
       name: "Dr. Sarah Chen",
       role: "AI Research Lead",
-      // image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&h=200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&h=200&auto=format&fit=crop"
     },
     {
       name: "Mark Johnson",
       role: "Marine Biologist",
-      // image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=200&h=200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=200&h=200&auto=format&fit=crop"
     },
     {
       name: "Alex Rodriguez",
       role: "Data Engineer",
-      // image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop"
     },
     {
       name: "Priya Patel",
       role: "Full Stack Developer",
-      // image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&auto=format&fit=crop"
     }
   ];
 
@@ -206,11 +206,11 @@ const About = () => {
               Explore our platform and join our mission to protect and preserve our oceans.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/sea-trash" className="glass-button ripple flex items-center group">
-                <span>Get Started</span>
+              <Link to="/dashboard" className="glass-button ripple flex items-center group">
+                <span>Explore Dashboard</span>
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              {/* <a 
+              <a 
                 href="https://seadetection.streamlit.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -218,7 +218,7 @@ const About = () => {
               >
                 <span>Open Streamlit App</span>
                 <ExternalLink className="ml-2 w-4 h-4" />
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
