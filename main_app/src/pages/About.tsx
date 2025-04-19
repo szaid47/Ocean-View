@@ -206,11 +206,11 @@ const About = () => {
               Explore our platform and join our mission to protect and preserve our oceans.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/dashboard" className="glass-button ripple flex items-center group">
-                <span>Explore Dashboard</span>
+              <Link to="/sea-trash" className="glass-button ripple flex items-center group">
+                <span>Get Started</span>
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <a 
+              {/* <a 
                 href="https://seadetection.streamlit.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -218,7 +218,7 @@ const About = () => {
               >
                 <span>Open Streamlit App</span>
                 <ExternalLink className="ml-2 w-4 h-4" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
