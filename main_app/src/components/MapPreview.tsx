@@ -94,7 +94,7 @@ const MapPreview = ({
             className="flex items-center"
           >
             <Link 
-              to="/map" 
+              to="/ocean-view" 
               className="glass-button ripple flex items-center"
             >
               <span>View Full Map</span>
