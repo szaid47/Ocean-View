@@ -6,15 +6,15 @@ An AI-powered underwater trash detection application that uses advanced computer
 
 ### 🌊 Homepage
 
-![Homepage](assets\homepage.png)
+![Homepage](assets/homepage.png)
 
 ### 🧠 Trash Detection (Bounding Boxes)
 
-![Detection Result](assets\detection.png)
+![Detection Result](assets/detection.png)
 
 ### 🔥 Heatmap Analytics
 
-![Heatmap](assets\ocean-view.png)
+![Heatmap](assets/ocean-view.png)
 
 ## Features
 
