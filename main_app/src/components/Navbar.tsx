@@ -41,7 +41,7 @@ const Navbar = () => {
               <Droplet className="h-6 w-6 text-ocean" />
               <span className="absolute inset-0 bg-ocean rounded-full animate-pulse-subtle opacity-30 group-hover:opacity-50 transition-opacity"></span>
             </span>
-            <span className="font-bold text-lg tracking-tight ocean-text">Sea Guardian</span>
+            <span className="font-bold text-lg tracking-tight ocean-text">Ocean View</span>
           </Link>
 
           <div className="hidden md:flex md:items-center md:space-x-6">
