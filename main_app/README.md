@@ -4,6 +4,18 @@ An AI-powered underwater trash detection application that uses advanced computer
 
 ![Sea Trash Detection](https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=1000&auto=format&fit=crop)
 
+### 🌊 Homepage
+
+![Homepage](assets\homepage.png)
+
+### 🧠 Trash Detection (Bounding Boxes)
+
+![Detection Result](assets\detection.png)
+
+### 🔥 Heatmap Analytics
+
+![Heatmap](assets\ocean-view.png)
+
 ## Features
 
 - **Single Image Processing**: Upload and analyze individual underwater images to detect trash
@@ -15,12 +27,14 @@ An AI-powered underwater trash detection application that uses advanced computer
 ## Tech Stack
 
 ### Frontend
+
 - React with TypeScript
 - TailwindCSS for styling
 - ShadCN UI components
 - Framer Motion for animations
 
 ### Backend
+
 - Python FastAPI
 - YOLO for object detection
 - OpenCV for image processing
@@ -103,18 +117,19 @@ node server.js
 ### Option 2: Separate Terminals
 
 #### Terminal 1 (Backend):
-```bash
+
+````bash
 # Activate virtual environment if you created one
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Start the FastAPI server
 uvicorn main:app --reload
-```
+```uiv
 
 #### Terminal 2 (Frontend):
 ```bash
 npm run dev
-```
+````
 
 ### Option 3: Production Build
 
